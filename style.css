@@ -1,0 +1,185 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+}
+:root{
+    /* ## Colors */
+
+/* ### Primary */
+
+--Magenta-Muito-Escuro: hsl(300, 43%, 22%);
+--Rosa-suave: hsl(333, 80%, 67%);
+
+/* ### Neutral */
+
+--Magenta-Acinzentado-Escuro: hsl(303, 10%, 53%);
+--Magenta-Acinzentado-Claro: hsl(300, 24%, 96%);
+
+
+}
+body{
+    font-size: 17px;
+    margin: auto;
+    background-image: url('images/bg-pattern-top-mobile.svg'),url("images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat,no-repeat;
+      background-position:left top,right bottom ;
+      background-size:contain,contain ;
+}
+section.star_produ{
+    padding: 10px;
+    margin-top: 70px;
+    
+}
+section.star_produ h1{
+    text-align: center;
+    margin: 20px 40px;
+    font-size: 2em;
+    color: var(--Magenta-Muito-Escuro);
+    font-weight: 900;
+    min-width: 270px;
+    max-width: 300px;
+    margin: auto;
+}
+section.star_produ p{
+    text-align: center;
+    margin: auto;
+    color: var(--Magenta-Acinzentado-Escuro);
+    line-height: 20px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 15px;
+    min-width: 270px;
+    max-width: 300px;
+    
+}
+section.star_produ div.stars{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+section.star_produ div.stars div.star{
+    display: flex;
+    background-color: var(--Magenta-Acinzentado-Claro);
+    margin: 14px 5px;
+    padding: 15px 10px;
+    min-width: 270px;
+    max-width: 350px;
+    justify-content: center;   
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 25px;
+}
+section.star_produ div.stars h5{
+    color: var(--Magenta-Muito-Escuro);
+}
+section.container img{
+    width: 40px;
+    
+}
+section.container{
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+section.container div.divi{
+    min-width: 270px;
+    max-width: 300px;
+    background-color: var(--Magenta-Muito-Escuro);
+    padding:25px ;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+section.container div.divi div.cola{
+    display: flex;
+    align-items: center;
+}
+section.container div.divi div.cola img{
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+section.container div.divi div.cola div.name{
+    line-height: 20px;
+}
+section.container div.divi div.cola div.name strong{
+    color: var(--Rosa-suave);
+}
+section.container div.divi p{
+    line-height: 20px;
+    padding: 20px 0px;
+}
+@media screen and (min-width:1100px){
+    
+    body{
+        background-image: url('images/bg-pattern-top-desktop.svg'),url("images/bg-pattern-bottom-desktop.svg");
+        background-repeat: no-repeat,no-repeat;
+        background-position:left top,right bottom ;
+        background-size: contain,contain;
+    }
+    
+    section.star_produ h1{
+        font-size: 3em;
+        text-align: left;
+        max-width: 400px;
+        margin-left: 130px;
+    }
+    section.star_produ p{
+        text-align: left;
+        max-width: 400px;
+        margin-left: 130px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-right: 21px;
+    }
+    section.star_produ{
+        display: flex;
+        justify-content: space-around;
+    }
+    section.star_produ div.stars div.star{
+        flex-flow: row;
+    }
+    section.star_produ div.stars div.star .images{
+        padding-right: 20px;
+    }
+    section.star_produ div.stars div#star_1{
+        margin-left: 100px;
+        margin-right: 270px;
+       
+    }
+    section.star_produ div.stars div#star_2{
+        margin-left: 150px;
+        margin-right: 250px;
+        
+    }
+    section.star_produ div.stars div#star_3{
+        margin-left: 200px;
+        margin-right: 200px;
+        
+    }
+    section.container div.divi{
+        max-width: 350px;
+        
+    }
+    section.container div.divi#bloco_1{
+        margin-bottom: 50px;
+    }
+    section.container div.divi#bloco_2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    section.container div.divi#bloco_3{
+        margin-top: 50px;
+    }
+    section.container div.divi p{
+        line-height: 25px;
+    }
+}
